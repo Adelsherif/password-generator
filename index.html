@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="head"><h1>Password <span> Generator</span></h1></div>
+    <div class="form">
+        <form>
+            <h2>Keep <span>your</span> live</h2>
+            <div class="input">
+            <input type="text" disabled placeholder="Password" id="input-01"/>
+            <div class="icon" id="icon"><i class="fa-solid fa-copy fa-2x"></i></div>
+        </div>
+        <div class="range">
+            <input type="range" name="range" id="range" max="16" value="0"/>
+            <label id="rangeLength"></label>
+        </div>
+        <div class="category">
+            <div>
+            <input type="checkbox" name="upper" value="uppercase" />
+            <label>Uppercase</label>
+        </div>
+            <div>
+            <input type="checkbox" name="upper" value="lowercase" />
+            <label>Lowercase</label>
+        </div>
+            <div>
+            <input type="checkbox" name="number" value="numbers" />
+            <label>Numbers</label>
+        </div>
+            <div>
+            <input type="checkbox" name="spicial" value="symboles" />
+            <label>Symboles</label>
+        </div>
+        </div>
+        <input type="submit" value="Generate" id="input-02"/>
+        <a href="" id="reset">reset</a>
+        </form>
+    </div>
+    <footer>
+        <h3 class="toggle">CopyRight <i class="fa-solid fa-copyright"></i><span> Adel Sherif</span> 2022</h3>
+    </footer>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
